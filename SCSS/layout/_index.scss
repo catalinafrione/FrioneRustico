@@ -1,0 +1,119 @@
+body {
+    background-image: url(./Imagenes/fondopagina.jpg.jpg);
+    background-size: cover;
+}
+
+.header {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    z-index: 1000;
+    text-decoration: none;
+    flex-wrap: wrap;
+ 
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .nav {
+        ul {
+            display: flex;
+            align-items: center;
+            margin-left: 200px;
+            justify-content: center;
+
+            li {
+                margin-right: 20px;
+                justify-content: space-between;
+                list-style-type: none;
+                font-size: 20px;
+                margin-left: 50px;
+
+                a {
+                    text-decoration: none;
+                    color: rgb(78, 52, 31);
+                }
+            }
+        }
+    }
+}
+
+a {
+    color: rgb(112, 111, 111);
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+h1 {
+    color: rgb(124, 122, 117);
+    font-size: 25px;
+    font-family: 'Arsenal', sans-serif;
+    display: inline;
+}
+
+.parrafo1 {
+    background-color: rgb(214, 223, 201);
+}
+
+.encabezadoppal {
+    color: rgb(160, 130, 100);
+}
+
+h3, h2 {
+    color: rgb(102, 148, 108);
+    font-family: 'Poiret One', sans-serif, 'Architects Daughter', cursive, 'Arsenal', sans-serif;
+}
+
+p {
+    font-family: 'Architects Daughter', cursive;
+    
+}
+
+
+
+.imgdestacadas {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    justify-content: center;
+
+    img {
+        width: 250px;
+        height: 250px;
+        border-radius: 10%;
+        box-shadow: 5px 5px 20px black;
+        transition: 2s;
+
+        &:hover {
+            width: 500px;
+            height: 500px;
+            border-radius: 100%;
+            box-shadow: 5px 5px 50px black;
+            transition: 2s;
+        }
+    }
+}
+
+.wsp-logo {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+}
+
+h2 {
+    margin-left: 500px;
+}
+
+.carousel.slide#carouselExampleInterval {
+    width: 800px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 300px;
+    margin-bottom: 100px;
+}
+
+

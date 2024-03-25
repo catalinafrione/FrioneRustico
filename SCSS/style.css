@@ -1,0 +1,449 @@
+@charset "UTF-8";
+body {
+  background-image: url(./Imagenes/fondopagina.jpg.jpg);
+  background-size: cover;
+}
+
+.header {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header h1 {
+  font-size: 30px;
+}
+.header .nav ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+  justify-content: center;
+}
+.header .nav ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.header .nav ul li a {
+  text-decoration: none;
+  color: rgb(78, 52, 31);
+}
+
+a {
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h1 {
+  color: rgb(124, 122, 117);
+  font-size: 25px;
+  font-family: "Arsenal", sans-serif;
+  display: inline;
+}
+
+.parrafo1 {
+  background-color: rgb(214, 223, 201);
+}
+
+.encabezadoppal {
+  color: rgb(160, 130, 100);
+}
+
+h3, h2 {
+  color: rgb(102, 148, 108);
+  font-family: "Poiret One", sans-serif, "Architects Daughter", cursive, "Arsenal", sans-serif;
+}
+
+p {
+  font-family: "Architects Daughter", cursive;
+}
+
+.imgdestacadas {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+}
+.imgdestacadas img {
+  width: 250px;
+  height: 250px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+  transition: 2s;
+}
+.imgdestacadas img:hover {
+  width: 500px;
+  height: 500px;
+  border-radius: 100%;
+  box-shadow: 5px 5px 50px black;
+  transition: 2s;
+}
+
+.wsp-logo {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+}
+
+h2 {
+  margin-left: 500px;
+}
+
+.carousel.slide#carouselExampleInterval {
+  width: 800px;
+  justify-content: flex-start;
+  margin-top: 100px;
+  position: relative;
+  margin-left: 300px;
+  margin-bottom: 100px;
+}
+
+.grid-cortinas {
+  display: grid;
+  grid-template-rows: 100px 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-areas: "nav nav nav" "cor1 cor2 cor3" "cor4 cor5 cor6";
+}
+
+.encabezado-cortinas {
+  grid-area: nav;
+  position: sticky;
+  top: 0px;
+}
+
+.cortina1 {
+  grid-area: cor1;
+}
+
+.cortina2 {
+  grid-area: cor2;
+}
+
+.cortina3 {
+  grid-area: cor3;
+}
+
+.cortina4 {
+  grid-area: cor4;
+}
+
+.cortina5 {
+  grid-area: cor5;
+}
+
+.cortina6 {
+  grid-area: cor6;
+}
+
+.grid-cortinas img {
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+  margin-top: 100px;
+  margin-left: 30px;
+  display: flex;
+  gap: 100px;
+}
+
+.header-cortinas {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-cortinas h1 {
+  color: rgb(124, 122, 117);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-cortinas ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-cortinas ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-cortinas ul li a {
+  text-decoration: none;
+  color: rgb(78, 52, 31);
+}
+
+p {
+  margin-left: 50px;
+}
+
+.wsp-logo {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+}
+
+.img-almohadones {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  /* Espacio entre las imágenes */
+  justify-content: center;
+}
+.img-almohadones img {
+  width: 350px;
+  /* Ancho de cada imagen */
+  height: 350px;
+  /* Altura automática para mantener la proporción */
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+}
+
+.header-almohadones {
+  pposition: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-almohadones h1 {
+  color: rgb(124, 122, 117);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-almohadones ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-almohadones ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-almohadones ul li a {
+  text-decoration: none;
+  color: rgb(78, 52, 31);
+}
+
+.alm-frozen {
+  margin-left: 180px;
+}
+
+.alm-ww {
+  margin-right: 180px;
+}
+
+.wsp-logo {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+}
+
+body {
+  background-image: url(./Imagenes/fondopagina.jpg.jpg);
+  background-size: cover;
+}
+
+.img-velas div img {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  justify-content: center;
+  width: 350px;
+  height: 350px;
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+}
+
+.header-velas {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-velas h1 {
+  color: rgb(124, 122, 117);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-velas ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-velas ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-velas ul li a {
+  text-decoration: none;
+  color: rgb(78, 52, 31);
+}
+
+.wsp-logo {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+}
+
+.header-contacto {
+  position: sticky;
+  top: 0px;
+  background-color: rgb(240, 240, 240);
+  display: flex;
+  z-index: 1000;
+  text-decoration: none;
+  flex-wrap: wrap;
+}
+.header-contacto h1 {
+  color: rgb(124, 122, 117);
+  font-size: 20px;
+  font-family: "Arsenal", sans-serif;
+  justify-content: center;
+  margin-left: 30px;
+  flex-wrap: wrap;
+}
+
+.nav-contacto ul {
+  display: flex;
+  align-items: center;
+  margin-left: 200px;
+}
+.nav-contacto ul li {
+  margin-right: 20px;
+  justify-content: space-between;
+  list-style-type: none;
+  font-size: 20px;
+  margin-left: 50px;
+}
+.nav-contacto ul li a {
+  text-decoration: none;
+  color: rgb(78, 52, 31);
+}
+
+.formulario {
+  width: 800px;
+  height: auto;
+  margin: 500px;
+  margin-top: 100px;
+  margin-bottom: 200px;
+}
+.formulario .form-nombre {
+  padding: 15px;
+  padding-left: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.form-celular {
+  padding: 16px;
+  padding-left: 150px;
+}
+
+.form-mail {
+  padding: 16px;
+  padding-left: 150px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+.form-pinteres {
+  padding: 15px;
+  padding-left: 184px;
+}
+
+.form-option {
+  justify-content: center;
+}
+
+.wsp-logo {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+}
+
+@media only screen and (max-width: 500px) {
+  .header {
+    position: initial;
+  }
+  .header ul {
+    margin-right: 0px;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 0px;
+    width: 500px;
+  }
+  .imgdestacadas {
+    margin-top: 30px;
+    gap: 20px;
+  }
+  .imgdestacadas img {
+    width: 200px;
+    height: 200px;
+    margin-top: 0px;
+    margin-right: 150px;
+  }
+  h1 {
+    margin-left: 80px;
+  }
+  #carouselExampleInterval {
+    width: 300px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 50px;
+  }
+  .nav ul {
+    display: block;
+  }
+  .nav-cortinas ul {
+    display: block;
+  }
+  .nav li {
+    margin-bottom: 5px;
+  }
+  .grid-cortinas {
+    display: grid;
+    grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 1fr;
+    grid-template-areas: "nav" "cor1" "cor2" "cor3" "cor4" "cor5" "cor6";
+  }
+}/*# sourceMappingURL=style.css.map */

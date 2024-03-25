@@ -1,0 +1,69 @@
+body {
+    background-image: url(./Imagenes/fondopagina.jpg.jpg);
+    background-size: cover;
+}
+
+.img-velas {
+    div {
+        img {
+            margin-top: 100px;
+            margin-bottom: 100px;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 100px;
+            justify-content: center;
+            width: 350px;
+            height: 350px;
+            border-radius: 10%;
+            box-shadow: 5px 5px 20px black;
+        }
+    }
+}
+
+.header-velas {
+    position: sticky;
+    top: 0px;
+    background-color: rgb(240, 240, 240);
+    display: flex;
+    z-index: 1000;
+    text-decoration: none;
+    flex-wrap: wrap;
+
+    h1 {
+        color: rgb(124, 122, 117);
+        font-size: 20px;
+        font-family: 'Arsenal', sans-serif;
+        justify-content: center;
+        margin-left: 30px;
+        flex-wrap: wrap;
+    }
+}
+
+.nav-velas {
+    ul {
+        display: flex;
+        align-items: center;
+        margin-left: 200px;
+
+        li {
+            margin-right: 20px;
+            justify-content: space-between;
+            list-style-type: none;
+            font-size: 20px;
+            margin-left: 50px;
+
+            a {
+                text-decoration: none;
+                color: rgb(78, 52, 31);
+            }
+        }
+    }
+}
+
+
+.wsp-logo {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+}
+
