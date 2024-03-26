@@ -1,6 +1,6 @@
 @charset "UTF-8";
 body {
-  background-image: url(./Imagenes/fondopagina.jpg.jpg);
+  background-image: url(../Imagenes/fondopagina.jpg);
   background-size: cover;
 }
 
@@ -31,18 +31,14 @@ body {
 }
 .header .nav ul li a {
   text-decoration: none;
-  color: rgb(78, 52, 31);
-}
-
-a {
   color: rgb(112, 111, 111);
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
 h1 {
-  color: rgb(124, 122, 117);
+  color: rgb(112, 111, 111);
   font-size: 25px;
-  font-family: "Arsenal", sans-serif;
+  font-family: "arsenal", sans-serif;
   display: inline;
 }
 
@@ -54,9 +50,10 @@ h1 {
   color: rgb(160, 130, 100);
 }
 
-h3, h2 {
+h3,
+h2 {
   color: rgb(102, 148, 108);
-  font-family: "Poiret One", sans-serif, "Architects Daughter", cursive, "Arsenal", sans-serif;
+  font-family: "arsenal", sans-serif;
 }
 
 p {
@@ -86,12 +83,6 @@ p {
   transition: 2s;
 }
 
-.wsp-logo {
-  position: fixed;
-  right: 15px;
-  bottom: 35px;
-}
-
 h2 {
   margin-left: 500px;
 }
@@ -105,9 +96,84 @@ h2 {
   margin-bottom: 100px;
 }
 
+.wsp-logo {
+  position: fixed;
+  right: 15px;
+  bottom: 35px;
+  width: 80px;
+}
+
+@media only screen and (max-width: 500px) {
+  .logo {
+    display: flex;
+    justify-content: center;
+    position: relative;
+    left: 170px;
+  }
+  .logo img {
+    width: 300px;
+  }
+  .header {
+    position: initial;
+    width: 800px;
+  }
+  .header ul {
+    flex-wrap: wrap;
+    list-style-type: none;
+    font-size: 20px;
+    width: 500px;
+    position: relative;
+    right: 80px;
+  }
+  .header ul li a {
+    font-size: 40px;
+    padding-inline: 50px;
+  }
+  .header h1 {
+    position: initial;
+    display: block;
+    margin-left: 200px;
+    font-size: 60px;
+  }
+  h2 {
+    margin-left: 180px;
+  }
+  .carousel.slide#carouselExampleInterval {
+    width: 800px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 5px;
+    margin-bottom: 100px;
+  }
+  .imgdestacadas {
+    margin-top: 30px;
+    gap: 20px;
+    justify-content: center;
+  }
+  .imgdestacadas img {
+    width: 350px;
+    height: 350px;
+    margin-top: 0px;
+    margin-left: 300px;
+  }
+  #carouselExampleInterval {
+    width: 300px;
+    justify-content: flex-start;
+    margin-top: 100px;
+    position: relative;
+    margin-left: 50px;
+  }
+  .wsp-logo {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 170px;
+  }
+}
 .grid-cortinas {
   display: grid;
-  grid-template-rows: 100px 1fr 1fr;
+  grid-template-rows: 60px 1fr 1fr;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-areas: "nav nav nav" "cor1 cor2 cor3" "cor4 cor5 cor6";
 }
@@ -116,6 +182,8 @@ h2 {
   grid-area: nav;
   position: sticky;
   top: 0px;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .cortina1 {
@@ -156,6 +224,7 @@ h2 {
 .header-cortinas {
   position: sticky;
   top: 0px;
+  width: 100%;
   background-color: rgb(240, 240, 240);
   display: flex;
   z-index: 1000;
@@ -185,37 +254,58 @@ h2 {
 }
 .nav-cortinas ul li a {
   text-decoration: none;
-  color: rgb(78, 52, 31);
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-p {
-  margin-left: 50px;
-}
-
-.wsp-logo {
+.wsp-logocor {
   position: fixed;
   right: 15px;
   bottom: 35px;
+  width: 80px;
 }
 
-.img-almohadones {
-  margin-top: 100px;
-  margin-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  /* Espacio entre las imágenes */
-  justify-content: center;
+body .p1, body .p2,
+body .p3,
+body .p4,
+body .p5,
+body .p6 {
+  margin-left: 70px;
 }
-.img-almohadones img {
-  width: 350px;
-  /* Ancho de cada imagen */
-  height: 350px;
-  /* Altura automática para mantener la proporción */
-  border-radius: 10%;
-  box-shadow: 5px 5px 20px black;
+@media only screen and (max-width: 500px) {
+  .grid-cortinas {
+    display: grid;
+    grid-template-rows: 200px 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-columns: 500px;
+    grid-template-areas: "nav" "cor1" "cor2" "cor3" "cor4" "cor5" "cor6";
+  }
+  .grid-cortinas .encabezado-cortinas {
+    position: initial;
+  }
+  .grid-cortinas .encabezado-cortinas h1 {
+    font-size: 40px;
+  }
+  .grid-cortinas .encabezado-cortinas .nav-cortinas ul {
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 30px;
+  }
+  .grid-cortinas .encabezado-cortinas .nav-cortinas ul li a {
+    padding-inline: 60px;
+    font-size: 30px;
+  }
+  .cortina1 {
+    margin-top: 200px;
+  }
+  .wsp-logocor {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 100px;
+  }
 }
-
 .header-almohadones {
   pposition: sticky;
   top: 0px;
@@ -248,7 +338,26 @@ p {
 }
 .nav-almohadones ul li a {
   text-decoration: none;
-  color: rgb(78, 52, 31);
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+.img-almohadones {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 100px;
+  /* Espacio entre las imágenes */
+  justify-content: center;
+}
+.img-almohadones img {
+  width: 350px;
+  /* Ancho de cada imagen */
+  height: 350px;
+  /* Altura automática para mantener la proporción */
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
 }
 
 .alm-frozen {
@@ -259,33 +368,56 @@ p {
   margin-right: 180px;
 }
 
-.wsp-logo {
+main .img-almohadones .p7,
+main .img-almohadones .p8,
+main .img-almohadones .p9,
+main .img-almohadones .p10,
+main .img-almohadones .p11,
+main .img-almohadones .p12,
+main .img-almohadones .p13 {
+  text-align: center;
+}
+
+.wsp-logoalm {
   position: fixed;
   right: 15px;
   bottom: 35px;
+  width: 80px;
 }
 
-body {
-  background-image: url(./Imagenes/fondopagina.jpg.jpg);
-  background-size: cover;
+@media only screen and (max-width: 500px) {
+  .header-almohadones h1 {
+    font-size: 40px;
+  }
+  .nav-almohadones ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-almohadones ul li {
+    margin-right: 20px;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .nav-almohadones ul li a {
+    padding-inline: 80px;
+    font-size: 30px;
+  }
+  .alm-frozen {
+    margin: 0;
+  }
+  .alm-ww {
+    margin: 0;
+  }
 }
-
-.img-velas div img {
-  margin-top: 100px;
+main .nav2 {
   margin-bottom: 100px;
-  display: flex;
-  flex-wrap: wrap;
-  gap: 100px;
-  justify-content: center;
-  width: 350px;
-  height: 350px;
-  border-radius: 10%;
-  box-shadow: 5px 5px 20px black;
 }
 
 .header-velas {
   position: sticky;
-  top: 0px;
   background-color: rgb(240, 240, 240);
   display: flex;
   z-index: 1000;
@@ -315,26 +447,126 @@ body {
 }
 .nav-velas ul li a {
   text-decoration: none;
-  color: rgb(78, 52, 31);
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 
-.wsp-logo {
+.img-velas {
+  display: flex;
+  flex-wrap: wrap;
+}
+.img-velas img {
+  width: 250px;
+  /* Ancho de cada imagen */
+  height: 250px;
+  /* Altura automática para mantener la proporción */
+  border-radius: 10%;
+  box-shadow: 5px 5px 20px black;
+}
+.img-velas #Aromáticas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-left: 50px;
+}
+.img-velas #Aromáticas .p14,
+.img-velas #Aromáticas .p15,
+.img-velas #Aromáticas .p16,
+.img-velas #Aromáticas .p17 {
+  text-align: center;
+}
+.img-velas #Signos {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-left: 500px;
+  justify-content: center;
+}
+.img-velas #Signos .p18 {
+  text-align: center;
+}
+.img-velas #Personalizadas {
+  margin-top: 70px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 80px;
+  margin-left: 200px;
+  margin-bottom: 100px;
+}
+.img-velas #Personalizadas .p19,
+.img-velas #Personalizadas .p20,
+.img-velas #Personalizadas .p21 {
+  text-align: center;
+}
+
+.wsp-logovel {
   position: fixed;
   right: 15px;
   bottom: 35px;
+  width: 80px;
 }
 
+@media only screen and (max-width: 500px) {
+  .header-velas {
+    width: 700px;
+  }
+  .header-velas h1 {
+    font-size: 70px;
+    margin-left: 90px;
+  }
+  .nav-velas {
+    width: 500px;
+    margin-left: 100px;
+  }
+  .nav-velas ul {
+    margin: 0;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .nav-velas ul li {
+    margin-right: 0px;
+    justify-content: center;
+    list-style-type: none;
+    font-size: 20px;
+    margin-left: 0px;
+  }
+  .nav-velas ul li a {
+    padding-inline: 80px;
+    font-size: 40px;
+  }
+  .nav2 a {
+    font-size: 40px;
+  }
+  .img-velas {
+    justify-content: initial;
+  }
+  .img-velas img {
+    width: 400px;
+    height: 400px;
+  }
+  .img-velas #Signos {
+    margin-left: 150px;
+    justify-content: initial;
+  }
+  .img-velas #Personalizadas {
+    margin-left: 150px;
+    justify-content: initial;
+  }
+  .img-velas #Aromáticas {
+    margin-left: 150px;
+  }
+}
 .header-contacto {
   position: sticky;
   top: 0px;
   background-color: rgb(240, 240, 240);
   display: flex;
   z-index: 1000;
-  text-decoration: none;
   flex-wrap: wrap;
 }
 .header-contacto h1 {
-  color: rgb(124, 122, 117);
+  color: rgb(112, 111, 111);
   font-size: 20px;
   font-family: "Arsenal", sans-serif;
   justify-content: center;
@@ -356,7 +588,13 @@ body {
 }
 .nav-contacto ul li a {
   text-decoration: none;
-  color: rgb(78, 52, 31);
+  color: rgb(112, 111, 111);
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
+}
+
+h3 {
+  margin-left: 300px;
+  margin-top: 100px;
 }
 
 .formulario {
@@ -364,7 +602,8 @@ body {
   height: auto;
   margin: 500px;
   margin-top: 100px;
-  margin-bottom: 200px;
+  margin-bottom: 100px;
+  margin-left: 300px;
 }
 .formulario .form-nombre {
   padding: 15px;
@@ -374,12 +613,12 @@ body {
 }
 
 .form-celular {
-  padding: 16px;
-  padding-left: 150px;
+  padding: 15px;
+  padding-left: 140px;
 }
 
 .form-mail {
-  padding: 16px;
+  padding: 15px;
   padding-left: 150px;
   margin-left: 10px;
   margin-bottom: 10px;
@@ -394,10 +633,13 @@ body {
   justify-content: center;
 }
 
-.wsp-logo {
-  position: fixed;
-  right: 15px;
-  bottom: 35px;
+.comentario {
+  padding: 20px;
+}
+
+.iframe {
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 @media only screen and (max-width: 500px) {
@@ -410,26 +652,6 @@ body {
     font-size: 20px;
     margin-left: 0px;
     width: 500px;
-  }
-  .imgdestacadas {
-    margin-top: 30px;
-    gap: 20px;
-  }
-  .imgdestacadas img {
-    width: 200px;
-    height: 200px;
-    margin-top: 0px;
-    margin-right: 150px;
-  }
-  h1 {
-    margin-left: 80px;
-  }
-  #carouselExampleInterval {
-    width: 300px;
-    justify-content: flex-start;
-    margin-top: 100px;
-    position: relative;
-    margin-left: 50px;
   }
   .nav ul {
     display: block;

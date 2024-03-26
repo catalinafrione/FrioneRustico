@@ -1,19 +1,22 @@
+
+$padding: 15px;
+
 .header-contacto {
     position: sticky;
     top: 0px;
     background-color: rgb(240, 240, 240);
     display: flex;
     z-index: 1000;
-    text-decoration: none;
     flex-wrap: wrap;
 
     h1 {
-        color: rgb(124, 122, 117);
+        color: $color;
         font-size: 20px;
         font-family: 'Arsenal', sans-serif;
         justify-content: center;
         margin-left: 30px;
         flex-wrap: wrap;
+        
     }
 }
 
@@ -32,10 +35,18 @@
 
             a {
                 text-decoration: none;
-                color: rgb(78, 52, 31);
+                color:  rgb(112, 111, 111);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
+        
         }
     }
+}
+
+h3 {
+    margin-left: 300px;
+    margin-top: 100px;
+    
 }
 
 .formulario {
@@ -43,10 +54,11 @@
     height: auto;
     margin: 500px;
     margin-top: 100px;
-    margin-bottom: 200px;
+    margin-bottom: 100px;
+    margin-left: 300px;
 
     .form-nombre {
-        padding: 15px;
+        padding: $padding;
         padding-left: 150px;
         margin-left: 10px;
         margin-bottom: 10px;
@@ -54,19 +66,19 @@
 }
 
 .form-celular {
-    padding: 16px;
-    padding-left: 150px;
+    padding: $padding;
+    padding-left: 140px;
 }
 
 .form-mail {
-    padding: 16px;
+    padding: $padding;
     padding-left: 150px;
     margin-left: 10px;
     margin-bottom: 10px;
 }
 
 .form-pinteres {
-    padding: 15px;
+    padding: $padding;
     padding-left: 184px;
 }
 
@@ -74,10 +86,61 @@
     justify-content: center;
 }
 
+.comentario {
+     padding: 20px;
 
-.wsp-logo {
-    position: fixed;
-    right: 15px;
-    bottom: 35px;
+
 }
 
+.iframe{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+
+
+@media only screen and (max-width: 500px) {
+    .header {
+        position: initial;
+
+        ul {
+            margin-right: 0px;
+            list-style-type: none;
+            font-size: 20px;
+            margin-left: 0px;
+            width: 500px;
+        }
+    }
+
+
+
+    .nav {
+        ul {
+            display: block;
+        }
+    }
+
+    .nav-cortinas {
+        ul {
+            display: block;
+        }
+    }
+
+    .nav li {
+        margin-bottom: 5px;
+    }
+
+    .grid-cortinas {
+        display: grid;
+        grid-template-rows: 100px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            'nav'
+            'cor1'
+            'cor2' 
+            'cor3'
+            'cor4' 
+            'cor5' 
+            'cor6';
+    }
+}

@@ -1,5 +1,8 @@
+$color: rgb(112, 111, 111);
+$font-family: 'arsenal', sans-serif;
+
 body {
-    background-image: url(./Imagenes/fondopagina.jpg.jpg);
+    background-image: url(../Imagenes/fondopagina.jpg);
     background-size: cover;
 }
 
@@ -11,7 +14,7 @@ body {
     z-index: 1000;
     text-decoration: none;
     flex-wrap: wrap;
- 
+
 
     h1 {
         font-size: 30px;
@@ -33,22 +36,20 @@ body {
 
                 a {
                     text-decoration: none;
-                    color: rgb(78, 52, 31);
+                    color: rgb(112, 111, 111);
+                    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
                 }
             }
         }
     }
 }
 
-a {
-    color: rgb(112, 111, 111);
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-}
+
 
 h1 {
-    color: rgb(124, 122, 117);
+    color: $color;
     font-size: 25px;
-    font-family: 'Arsenal', sans-serif;
+    font-family: $font-family;
     display: inline;
 }
 
@@ -60,14 +61,15 @@ h1 {
     color: rgb(160, 130, 100);
 }
 
-h3, h2 {
+h3,
+h2 {
     color: rgb(102, 148, 108);
-    font-family: 'Poiret One', sans-serif, 'Architects Daughter', cursive, 'Arsenal', sans-serif;
+    font-family: $font-family;
 }
 
 p {
     font-family: 'Architects Daughter', cursive;
-    
+
 }
 
 
@@ -97,11 +99,7 @@ p {
     }
 }
 
-.wsp-logo {
-    position: fixed;
-    right: 15px;
-    bottom: 35px;
-}
+
 
 h2 {
     margin-left: 500px;
@@ -116,4 +114,99 @@ h2 {
     margin-bottom: 100px;
 }
 
+.wsp-logo {
+    position: fixed;
+    right: 15px;
+    bottom: 35px;
+    width: 80px;
+  }
 
+
+//medias querys//
+@media only screen and (max-width: 500px) {
+
+    .logo {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 170px;
+
+        img {
+            width: 300px;
+        }
+    }
+
+    .header {
+        position: initial;
+        width: 800px;
+
+        ul {
+            flex-wrap: wrap;
+            list-style-type: none;
+            font-size: 20px;
+            width: 500px;
+            position: relative;
+            right: 80px;
+
+
+            li {
+                a {
+                    font-size: 40px;
+                    padding-inline: 50px;
+                }
+
+            }
+        }
+
+        h1 {
+            position: initial;
+            display: block;
+            margin-left: 200px;
+            font-size: 60px;
+        }
+    }
+
+    h2 {
+        margin-left: 180px;
+        
+    }
+
+    .carousel.slide#carouselExampleInterval {
+        width: 800px;
+        justify-content: flex-start;
+        margin-top: 100px;
+        position: relative;
+        margin-left: 5px;
+        margin-bottom: 100px;
+    }
+
+    .imgdestacadas {
+        margin-top: 30px;
+        gap: 20px;
+        justify-content: center;
+
+        img {
+            width: 350px;
+            height: 350px;
+            margin-top: 0px;
+            margin-left: 300px;
+        }
+    }
+
+    #carouselExampleInterval {
+        width: 300px;
+        justify-content: flex-start;
+        margin-top: 100px;
+        position: relative;
+        margin-left: 50px;
+    }
+
+    
+    .wsp-logo {
+        position: fixed;
+        right: 15px;
+        bottom: 35px;
+        width: 170px;
+      }
+
+}

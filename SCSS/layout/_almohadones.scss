@@ -1,21 +1,4 @@
-.img-almohadones {
-    margin-top: 100px;
-    margin-bottom: 100px;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 100px;
-    /* Espacio entre las imágenes */
-    justify-content: center;
-
-    img {
-        width: 350px;
-        /* Ancho de cada imagen */
-        height: 350px;
-        /* Altura automática para mantener la proporción */
-        border-radius: 10%;
-        box-shadow: 5px 5px 20px black;
-    }
-}
+$text-align: center;
 
 .header-almohadones {
     pposition: sticky;
@@ -49,14 +32,38 @@
             font-size: 20px;
             margin-left: 50px;
 
+
             a {
                 text-decoration: none;
-                color: rgb(78, 52, 31);
+                color: rgb(112, 111, 111);
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
+
         }
     }
 }
 
+
+
+
+.img-almohadones {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 100px;
+    /* Espacio entre las imágenes */
+    justify-content: center;
+
+    img {
+        width: 350px;
+        /* Ancho de cada imagen */
+        height: 350px;
+        /* Altura automática para mantener la proporción */
+        border-radius: 10%;
+        box-shadow: 5px 5px 20px black;
+    }
+}
 
 .alm-frozen {
     margin-left: 180px;
@@ -66,9 +73,68 @@
     margin-right: 180px;
 }
 
-.wsp-logo {
+main {
+    .img-almohadones {
+
+        .p7,
+        .p8,
+        .p9,
+        .p10,
+        .p11,
+        .p12,
+        .p13 {
+            text-align: $text-align;
+        }
+    }
+}
+
+.wsp-logoalm {
     position: fixed;
     right: 15px;
     bottom: 35px;
+    width: 80px;
+}
+
+//medias querys//
+@media only screen and (max-width: 500px) {
+
+    .header-almohadones {
+        h1 {
+            font-size: 40px;
+        }
+    }
+
+    .nav-almohadones {
+        ul {
+            margin: 0;
+            flex-wrap: wrap;
+            justify-content: center;
+    
+            li {
+                margin-right: 20px;
+                justify-content: center;
+                list-style-type: none;
+                font-size: 20px;
+                margin-left: 0px;
+                
+
+    
+    
+                a {
+                    padding-inline: 80px;
+                    font-size: 30px;
+                }
+    
+            }
+        }
+    }
+    
+    .alm-frozen {
+        margin: 0;
+    }
+    
+    .alm-ww {
+        margin: 0;
+    }
 }
 

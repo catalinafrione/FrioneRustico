@@ -1,24 +1,22 @@
+$color: color: rgb(112, 111, 111);
 
 .grid-cortinas {
     display: grid;
-    grid-template-rows: 100px 1fr 1fr;
+    grid-template-rows: 60px 1fr 1fr;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-areas:
-    'nav nav nav'
-    'cor1 cor2 cor3'
-    'cor4 cor5 cor6';
+        'nav nav nav'
+        'cor1 cor2 cor3'
+        'cor4 cor5 cor6';
 }
-
-#gb {
-    // border: 5px solid red;//
-}
-
 
 
 .encabezado-cortinas {
     grid-area: nav;
     position: sticky;
     top: 0px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .cortina1 {
@@ -59,6 +57,7 @@
 .header-cortinas {
     position: sticky;
     top: 0px;
+    width: 100%;
     background-color: rgb(240, 240, 240);
     display: flex;
     z-index: 1000;
@@ -66,7 +65,7 @@
     flex-wrap: wrap;
 
     h1 {
-        color: rgb(124, 122, 117);
+        color: $color;
         font-size: 20px;
         font-family: 'Arsenal', sans-serif;
         justify-content: center;
@@ -90,19 +89,93 @@
 
             a {
                 text-decoration: none;
-                color: rgb(78, 52, 31);
+                color:$color;
+                font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
             }
+
+
         }
     }
 }
 
-p {
-   margin-left: 50px;
-}
-
-.wsp-logo {
+.wsp-logocor {
     position: fixed;
     right: 15px;
     bottom: 35px;
+    width: 80px;
+  }
+
+body {
+    .p1 {
+        margin-left: 70px;
+    }
+
+    .p2,
+    .p3,
+    .p4,
+    .p5,
+    .p6 {
+        @extend .p1;
+    }
 }
 
+
+
+
+@media only screen and (max-width: 500px) {
+
+    .grid-cortinas {
+        display: grid;
+        grid-template-rows: 200px 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-columns: 500px;
+        grid-template-areas:
+            'nav'
+            'cor1'
+            'cor2'
+            'cor3'
+            'cor4'
+            'cor5'
+            'cor6';
+
+        .encabezado-cortinas {
+            position: initial;
+
+            h1 {
+                font-size: 40px;
+            }
+
+            .nav-cortinas {
+                ul {
+                    margin: 0;
+                    display: flex;
+                    flex-wrap: wrap;
+                    text-align: center;
+                    margin-top: 30px;
+
+                    li {
+                        a {
+                            padding-inline: 60px;
+                            font-size: 30px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+
+.cortina1 {
+    margin-top: 200px;
+}
+
+    .wsp-logocor {
+        position: fixed;
+        right: 15px;
+        bottom: 35px;
+        width: 100px;
+    }
+}
+
+
+
+//CORTINAS
